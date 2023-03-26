@@ -1,0 +1,29 @@
+<diagram program="umletino" version="15.1"><zoom_level>14</zoom_level><element><id>UMLClass</id><coordinates><x>126</x><y>182</y><w>294</w><h>266</h></coordinates><panel_attributes>Alumno
+--
+-nombre: String
+-email: String
+--
++Alumno(String, String)
++getCantMateriasAprobadas(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>588</x><y>182</y><w>294</w><h>266</h></coordinates><panel_attributes>Materia
+--
+-nombre: String
+-cuatrimestre: String
+--
++ Materia(String, String)
++ isAprobada(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1064</x><y>182</y><w>294</w><h>266</h></coordinates><panel_attributes>EstadoMateria
+--
++ EN_CURSO
++ REPROBADA
++ APROBADA</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>546</x><y>588</y><w>322</w><h>266</h></coordinates><panel_attributes>Carrera
+--
+-nombre: String
+--
++ Carrera(String)
++ getInformeMaxMaterias(): Alumno[]
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>868</x><y>280</y><w>224</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+- estado</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>Relation</id><coordinates><x>252</x><y>434</y><w>322</w><h>294</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=0..n
+- alumnos</panel_attributes><additional_attributes>210;180;30;180;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>406</x><y>294</y><w>210</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+- materias
+m1=0..n</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>196</x><y>434</y><w>378</w><h>392</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;260;250;260</additional_attributes></element></diagram>

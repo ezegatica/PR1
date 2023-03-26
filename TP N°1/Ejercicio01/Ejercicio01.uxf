@@ -1,0 +1,71 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>935</x><y>550</y><w>242</w><h>209</h></coordinates><panel_attributes>Usuario
+--
+-id: int
+-nombre: String
+-email: String
+-esBecado: boolean
+--
++Usuario(int, String, String)
++Usuario(int, String, String, boolean)
++getId(): int
++getEsBecado(): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>715</x><y>176</y><w>231</w><h>209</h></coordinates><panel_attributes>Categoria
+--
+-id: int
+-nombre: String
+--
++Categoria(int, String)
++buscarCurso(int): Curso</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1166</x><y>176</y><w>286</w><h>209</h></coordinates><panel_attributes>Curso
+--
+-id: int
+-titulo: String
+-precio: int
+-valoracion: double
+--
++ Curso(int, String, int, Usuario)
++ getId(): int
++ usuarioEstaSuscripto(Usuario): boolean
++ getCantUsuariosBecados(): int
++ getAutor(): Usuario</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1166</x><y>374</y><w>275</w><h>341</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+- autor</panel_attributes><additional_attributes>190;10;190;290;10;290</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1562</x><y>176</y><w>231</w><h>209</h></coordinates><panel_attributes>Leccion
+--
+-nombre: String
+-duracion: int
+--
++Leccion(String, int, TipoLeccion)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1903</x><y>176</y><w>231</w><h>209</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+TipoLeccion
+--
++ TEXTO
++ VIDEO
++ RECURSO</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1782</x><y>242</y><w>143</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+- tipo</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1441</x><y>253</y><w>143</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=0..n
+- lecciones</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>Relation</id><coordinates><x>935</x><y>242</y><w>253</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=0..n
+- cursos</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1166</x><y>374</y><w>198</w><h>275</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=0..n
+- usuariosSuscriptos</panel_attributes><additional_attributes>50;10;50;230;10;230</additional_attributes></element><element><id>UMLClass</id><coordinates><x>418</x><y>539</y><w>330</w><h>209</h></coordinates><panel_attributes>Sitio
+--
+-nombre: String
+--
++Sitio(String)
++subscribirseACurso(int, int): RespuestaSuscripcion
+-buscarUsuario(int): Usuario
+-buscarCurso(int): Curso
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>737</x><y>374</y><w>154</w><h>253</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=0..n
+- categorias</panel_attributes><additional_attributes>10;200;60;200;60;10</additional_attributes></element><element><id>Relation</id><coordinates><x>737</x><y>660</y><w>220</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=0..n
+- usuarios</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>55</x><y>528</y><w>231</w><h>209</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+RespuestaSuscripcion
+--
++ CURSO_INEX
++ USUARIO_INEX
++ YA_SUSCRIPTO
++ ES_AUTOR
++ MAX_BECADOS
++ SUSCRIPTO_OK</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>275</x><y>616</y><w>165</w><h>33</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element></diagram>

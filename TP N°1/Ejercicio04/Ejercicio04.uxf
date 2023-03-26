@@ -1,0 +1,21 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>370</x><y>320</y><w>210</w><h>190</h></coordinates><panel_attributes>Droide
+--
+- nombre: String
+--
++ autoRepararse(): ResultadoReparacion
++ registrarDroide(Droide): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>330</y><w>140</w><h>140</h></coordinates><panel_attributes>Pieza
+--
+- nombre: String
+//  ^^ Podria ser un enum esto ^^
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>390</y><w>280</w><h>50</h></coordinates><panel_attributes>m1= 0..n
+lt=&lt;-
+-piezasOperativas</panel_attributes><additional_attributes>260;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>420</y><w>280</w><h>50</h></coordinates><panel_attributes>m1= 0..n
+lt=&lt;-
+-piezasNoOperativas</panel_attributes><additional_attributes>260;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>240</y><w>220</w><h>140</h></coordinates><panel_attributes>m1= 0..n
+lt=&lt;-
+-droidesRegistrados</panel_attributes><additional_attributes>10;80;10;20;150;20;150;120;60;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>650</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+EstadoReparacion
+--
++ COMPLETAMENTE_OPERATIVO
++ REPARACION_PARCIAL
++ REPARACION_IMPOSIBLE</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>500</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element></diagram>
