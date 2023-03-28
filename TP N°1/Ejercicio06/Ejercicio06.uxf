@@ -1,0 +1,27 @@
+<diagram program="umletino" version="15.1"><zoom_level>17</zoom_level><element><id>UMLClass</id><coordinates><x>204</x><y>85</y><w>374</w><h>289</h></coordinates><panel_attributes>Alumno
+--
+-nombre: String
+-email: String
+--
++getCantMateriasAprobadas(): int
++getPromedio(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>952</x><y>85</y><w>272</w><h>289</h></coordinates><panel_attributes>Materia
+--
+-nombre: String
+-nota: int
+--
++getNota(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>561</x><y>204</y><w>425</w><h>85</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=0..n
+-materias</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>204</x><y>561</y><w>629</w><h>289</h></coordinates><panel_attributes>Carrera
+--
+_-MAX_CANDIDATOS_: int
+_-MIN_MATERIAS_APROBADAS_: int
+--
++obtenerCandidatos(double): ArrayList&lt;Candidato&gt;
+-getAlumnosByCantMateriasAprobadas(int): ArrayList&lt;Alumno&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>289</x><y>357</y><w>136</w><h>238</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=0..n
+-alumnos</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1037</x><y>663</y><w>170</w><h>153</h></coordinates><panel_attributes>Candidato
+--
+-nombre: String
+-email: String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>816</x><y>731</y><w>255</w><h>51</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>130;10;10;10</additional_attributes></element></diagram>
