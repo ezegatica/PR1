@@ -1,0 +1,1 @@
+Me faltó castear en el NSPLUS cuando pregunto por el alto/ancho y en otra funcion

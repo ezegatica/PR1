@@ -1,0 +1,6 @@
+4)
+  a) No, ya que un TelefonoMovil es un Dispositivo, y un Padre no puede ser instancia de un Hijo porque le faltan los atributos del hijo
+  b) Si, porque una licuadora es un electrodomestico y tiene los metodos en comun
+  c) Si, porque ambos son de la misma clase
+  d) No, porque una motocicleta y una bicicleta son 2 clases completamente distintas, a lo sumo comparten que son vehiculos
+  e) No, ver (a)

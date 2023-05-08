@@ -1,0 +1,33 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>260</y><w>240</w><h>130</h></coordinates><panel_attributes>Plantel
+--
+_+BATERIA_MINIMA_SEGURA: int = 10_
+--
++montosPorCajero(): double[]
++informeDePedidos(): InformePedido[]
++mostrarPedidosConMasRiesgo(): void
+-buscarCajero(int): Cajero
+-buscarRobot(String): Robot</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>270</y><w>140</w><h>120</h></coordinates><panel_attributes>Cajero
+--
+-id: int
+-apellido: String
+-antiguedad: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>310</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-cajeros
+m1=5</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>470</y><w>120</w><h>100</h></coordinates><panel_attributes>Robot
+--
+-codigo: String
+-bateria: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>50</y><w>160</w><h>120</h></coordinates><panel_attributes>Pedido
+--
+-nombreCliente: String
+-idCajero: int
+-codigoRobot: String
+-monto: double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>380</y><w>70</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+-robots
+m1=8</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>160</y><w>80</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+-pedidos
+m1=0..n</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>60</y><w>150</w><h>100</h></coordinates><panel_attributes>InformePedido
+-
+-monto: double
+-apellidoCajero: String
+-bateriaRobot: int
+--
++InformePedido(double, String, int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>100</y><w>140</w><h>180</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>120;10;10;160</additional_attributes></element></diagram>

@@ -1,0 +1,35 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>390</x><y>370</y><w>210</w><h>190</h></coordinates><panel_attributes>Empresa
+--
++recaudacionTotal(): double
++cantVecesRecorrida(Estacion): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>370</y><w>260</w><h>190</h></coordinates><panel_attributes>Reserva
+-
+_+COSTO_POR_ESTACION: int=50_
+_+DESCUENTO_POR_CABECERA: double=0.8_
+-codigo: String
+-personas: int
+-
++getValor(): double
++personasPorEstacion(Estacion): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>80</y><w>260</w><h>190</h></coordinates><panel_attributes>Recorrido
+--
+--
++esCabeceraACabecera(): boolean
++pasaPorEstacion(Estacion): boolean
++getCantEstaciones(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>80</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+Estacion
+--
++BUENOS_AIRES
++LUJAN
++MERCEDES
++SUIPACHA
++CHIVILCOY
++ALBERTI
++BRAGADO</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>120</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-destino
+m1=1</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>180</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-partida
+m1=1</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>260</y><w>80</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+-recorrido
+m1=1</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>440</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-reservas
+m1=0..n</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element></diagram>

@@ -1,0 +1,17 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>230</x><y>510</y><w>300</w><h>160</h></coordinates><panel_attributes>Baraja
+--
+_+CANTIDAD_CARTAS: int = 48_
+--
++estaOrdenada(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>250</y><w>130</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+Palo
+--
++ORO
++BASTO
++ESPADA
++COPA</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>250</y><w>120</w><h>130</h></coordinates><panel_attributes>Carta
+--
+-valor: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>300</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-palo
+m1=1</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>370</y><w>140</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+-cartas
+m1=CANTIDAD_CARTAS</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element></diagram>

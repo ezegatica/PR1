@@ -1,0 +1,29 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>540</x><y>310</y><w>150</w><h>100</h></coordinates><panel_attributes>/Carta/
+--
+--
++esComodin(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>330</y><w>160</w><h>70</h></coordinates><panel_attributes>Baraja
+--
+--
++usarComodin(int): void
+-removerComodin(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>330</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+-cartas
+m1=0..n</panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>980</x><y>290</y><w>120</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+TipoCartaNormal
+--
++TREBOL
++DIAMANTE
++CORAZON
++PICA</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>900</x><y>330</y><w>100</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1..1
+-palo</panel_attributes><additional_attributes>10;20;80;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>310</y><w>140</w><h>100</h></coordinates><panel_attributes>CartaJuego
+--
+-valor: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>110</y><w>120</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+TipoCarta
+--
++NORMAL
++COMODIN</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>220</y><w>50</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+-tipo
+m1=1..1</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>350</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>500</y><w>190</w><h>100</h></coordinates><panel_attributes>Comodin
+--
+--
++usarComodin(int): CartaJuego</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>400</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element></diagram>

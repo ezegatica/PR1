@@ -1,0 +1,46 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>650</x><y>80</y><w>220</w><h>180</h></coordinates><panel_attributes>Reserva
+--
+-fecha: String
+-hechaOnline: boolean
+--
++cantMesasPool(): int
++getHechaOnline(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1010</x><y>70</y><w>160</w><h>180</h></coordinates><panel_attributes>Persona
+--
+-nombre: String
+-mail: String
+-telefono: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>380</y><w>160</w><h>120</h></coordinates><panel_attributes>/Juego/
+--
+_-COSTO_BASE: int=100_
+--
++esBillar(): boolean
+/+calcularPrecio(): double/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>790</x><y>560</y><w>210</w><h>180</h></coordinates><panel_attributes>Bowling
+--
+_-DESCUENTO_BANDAS: int=10_
+_-COSTO_POR_PERSONA: int=480_
+-numero: int
+-cantidadPersonas: int
+-poseeBandas: boolean
+--
++calcularPrecio(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>560</y><w>210</w><h>130</h></coordinates><panel_attributes>Billar
+--
+-id: int
+-cantidadHorasReservadas: int
+_-COSTO_POR_HORA_ int=350_
+--
++calcularPrecio(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>770</y><w>260</w><h>140</h></coordinates><panel_attributes>Pool
+--
+_-DESCUENTO_POR_HORAS: int=20_
+_-HORAS_MIN_PARA_DESCUENTO_: int=2_
+--
++puedeDevolverBolas(): boolean
++calcularPrecio(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>160</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1..1
+-reservador</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>250</y><w>70</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+-juegos
+m1=1..n</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>80</y><w>250</w><h>110</h></coordinates><panel_attributes>Bar
+--
+--
++porcCostoReservasOnline(): int
++reservasConNMesasPool(int): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>140</y><w>150</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>750</x><y>490</y><w>140</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;120;70</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>680</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>490</y><w>130</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;70</additional_attributes></element></diagram>

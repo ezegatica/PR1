@@ -1,0 +1,14 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>680</x><y>360</y><w>120</w><h>120</h></coordinates><panel_attributes>Bicicleta
+--
+-marca: String
+-modelo: String
+-kilometros: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>550</y><w>120</w><h>120</h></coordinates><panel_attributes>BicicletaElectrica
+--
+-potencia: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>470</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>380</y><w>280</w><h>130</h></coordinates><panel_attributes>Taller
+--
+_-KMS_MAXIMOS: int_
+_-POTENCIA_MAXIMA: int_
+--
++cantServiciosPosibles(ArrayList&lt;Bicicleta&gt;): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>380</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+-bicicletas
+m1=0..n</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element></diagram>
