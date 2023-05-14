@@ -1,0 +1,33 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>66</x><y>297</y><w>363</w><h>132</h></coordinates><panel_attributes>Empresa
+--
+--
++obtenerCostosDeViajes(): CostoPorViaje[viajes.size()]
++obtenerViajesXChoferCamion()
+-buscarChofer(String): Chofer
+-buscarCamion(int): Camion
+-calcularCostoViaje(Viaje, Camion, Chofer): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>297</x><y>88</y><w>154</w><h>132</h></coordinates><panel_attributes>Chofer
+--
+-id: String
+-nombre: String
+-pagoPorViaje: double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>22</x><y>88</y><w>154</w><h>132</h></coordinates><panel_attributes>Camion
+--
+-id: int
+-costoPorKm: double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>143</x><y>528</y><w>198</w><h>154</h></coordinates><panel_attributes>Viaje
+--
+-idCamion: int
+-idChofer: String
+-kms: double
+--
++esElChofer(Chofer): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>286</x><y>209</y><w>121</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+-choferes
+m1=20</panel_attributes><additional_attributes>60;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>231</x><y>418</y><w>66</w><h>132</h></coordinates><panel_attributes>lt=&lt;-
+-viajes
+m1=0..n</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>132</x><y>209</y><w>132</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+-camiones
+m1=10</panel_attributes><additional_attributes>10;10;70;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>495</x><y>209</y><w>110</w><h>132</h></coordinates><panel_attributes>CostoPorViaje
+--
+-viaje: Viaje
+-costo: double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>418</x><y>286</y><w>99</w><h>99</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>70;10;10;70</additional_attributes></element><element><id>UMLNote</id><coordinates><x>440</x><y>506</y><w>154</w><h>77</h></coordinates><panel_attributes>Falta el punto C
+
+No se como plantear la 
+clase que devuelva</panel_attributes><additional_attributes></additional_attributes></element></diagram>

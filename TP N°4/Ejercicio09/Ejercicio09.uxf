@@ -1,0 +1,47 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>280</x><y>190</y><w>250</w><h>170</h></coordinates><panel_attributes>Estacionamiento
+--
+_+PISOS: int=8_
+_+ESPACIOS: int=6_
+_+VALOR_MINIMO: int=1_
+
+--
++retirar(int): Auto
+-buscarEspacio(int): Espacio
+-ubicacionValida(int, int): boolean
+-registrarRetiro(Auto): void
++autosMasMorososPorPiso(): Auto[PISOS]
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>280</y><w>140</w><h>110</h></coordinates><panel_attributes>Espacio
+--
+--
++tieneAuto(): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>320</y><w>240</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+-espacios[PISOS][ESPACIOS]</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>460</y><w>240</w><h>150</h></coordinates><panel_attributes>Auto
+--
+-patente: String
+--
++estaAlDia(): boolean
+-estaAlDiaEsteAnio(): boolean
+-estaAlDiaAnioAnterior(): boolean
++getMesesPendientes(): int
+-mesesPendientesEsteAnio(): int
+-mesesPendientesAnioAnterior(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>460</y><w>150</w><h>110</h></coordinates><panel_attributes>Pago
+--
+-monto: String
+-dni: int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>500</y><w>200</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+-pagos[12]</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>460</y><w>150</w><h>110</h></coordinates><panel_attributes>Fecha
+--
+--
++Fecha(int, int, int)
+_+hoy(): Fecha_
++ getDia(): int
++ getMes(): int
++ getAnio(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>500</y><w>160</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+-fechaDeIngreso</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>250</y><w>150</w><h>110</h></coordinates><panel_attributes>Registro
+--
+-patente: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>350</y><w>110</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+-fechaDeRetiro</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>380</y><w>210</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+-auto
+m1=0..1</panel_attributes><additional_attributes>10;110;190;10</additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>310</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-registros
+m1=0..n</panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>350</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element></diagram>
